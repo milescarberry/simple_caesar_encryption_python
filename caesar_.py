@@ -1,13 +1,17 @@
 import string                # This is a stock Python module.
 
 
+print()
 
 
+input_text = str(input("Input text (Don't enter numbers):- "))
 
-input_text = "My name is Aditya Kumar!"
+print()
 
 
-shifts = 10
+shifts = int(input("Input Shift (The shift number should be less than or equal to 26):- "))
+
+
 
 alphabet_list = [string.ascii_uppercase, string.ascii_lowercase, string.punctuation]
 
@@ -51,3 +55,13 @@ if __name__ == "__main__":
     print()
 
     print(caesar(input_text, shifts, alphabet_list))                  # print the return value of the caesar() function.
+
+
+
+
+
+# str.maketrans(og_alphabets, shifted_alphabets) places the two strings one below the other and "maps" each and every character in those strings.
+
+
+
+# shifted_text = text.translate(translation_table)

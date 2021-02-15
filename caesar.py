@@ -49,3 +49,6 @@ print(encrypted_text)
 # alphabet_set "ABCDEFG"
 
 # alphabet_set_shift_two = "CDEFGAB"
+
+
+# shift = shift % 26   ==> We are actually moving around in circles inside the alphabet string. The number of characters in the alphabet string will always remain constant at 26, no matter how many shifts are performed. Therefore, we calculate the remainder of the division if the user enters a number greater than the length of the alphabet string.
